@@ -66,14 +66,22 @@ chmod +x ~/telegram_notify.sh
   "hooks": {
     "Stop": [
       {
-        "type": "command",
-        "command": "~/telegram_notify.sh"
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/telegram_notify.sh"
+          }
+        ]
       }
     ],
     "Notification": [
       {
-        "type": "command",
-        "command": "~/telegram_notify.sh"
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/telegram_notify.sh"
+          }
+        ]
       }
     ]
   }

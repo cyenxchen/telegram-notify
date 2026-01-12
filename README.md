@@ -66,14 +66,22 @@ Add the following to your Claude Code settings file (`~/.claude/settings.json`):
   "hooks": {
     "Stop": [
       {
-        "type": "command",
-        "command": "~/telegram_notify.sh"
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/telegram_notify.sh"
+          }
+        ]
       }
     ],
     "Notification": [
       {
-        "type": "command",
-        "command": "~/telegram_notify.sh"
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/telegram_notify.sh"
+          }
+        ]
       }
     ]
   }
