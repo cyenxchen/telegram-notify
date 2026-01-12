@@ -49,8 +49,20 @@ source ~/.zshrc  # or source ~/.bashrc
 
 ### 4. Download and Configure the Script
 
+**Option A: Download from GitHub Releases (Recommended)**
+
 ```bash
-# Download the script
+# Download the latest release
+curl -L -o ~/telegram_notify.sh https://github.com/cyenxchen/telegram-notify/releases/latest/download/telegram_notify.sh
+
+# Make it executable
+chmod +x ~/telegram_notify.sh
+```
+
+**Option B: Download from master branch**
+
+```bash
+# Download from master branch
 curl -o ~/telegram_notify.sh https://raw.githubusercontent.com/cyenxchen/telegram-notify/master/telegram_notify.sh
 
 # Make it executable

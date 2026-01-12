@@ -49,8 +49,20 @@ source ~/.zshrc  # 或 source ~/.bashrc
 
 ### 4. 下载并配置脚本
 
+**方式 A：从 GitHub Releases 下载（推荐）**
+
 ```bash
-# 下载脚本
+# 下载最新 release 版本
+curl -L -o ~/telegram_notify.sh https://github.com/cyenxchen/telegram-notify/releases/latest/download/telegram_notify.sh
+
+# 添加执行权限
+chmod +x ~/telegram_notify.sh
+```
+
+**方式 B：从 master 分支下载**
+
+```bash
+# 从 master 分支下载
 curl -o ~/telegram_notify.sh https://raw.githubusercontent.com/cyenxchen/telegram-notify/master/telegram_notify.sh
 
 # 添加执行权限
